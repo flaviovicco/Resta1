@@ -1,0 +1,50 @@
+Group Resta1
+   Version=7.0
+   VSSDB=
+   HasProperties=1
+   Properties
+      BeforeApply=
+      AfterApply=
+      Icon=
+      ID=
+      Version=
+      PalmName=
+      OutPut=
+   End
+   ProjectsCount=1
+   Project Novo Projeto
+      FoldersCount=2
+      Folder Fontes
+         VSSPath=Fontes
+         FilesCount=2
+         File \VICCO\Resta1\TResta1.PRW
+             Type=T
+         End
+         File \VICCO\Resta1\Resta1.PRW
+             Type=T
+         End
+      End
+      Folder Imagens
+         VSSPath=Definições
+         FilesCount=6
+         File \VICCO\Resta1\backg.png
+             Type=I
+         End
+         File \VICCO\Resta1\backg2.png
+             Type=I
+         End
+         File \VICCO\Resta1\empty.png
+             Type=I
+         End
+         File \VICCO\Resta1\full.png
+             Type=I
+         End
+         File \VICCO\Resta1\restaum.bmp
+             Type=I
+         End
+         File \VICCO\Resta1\select.png
+             Type=I
+         End
+      End
+   End
+End
