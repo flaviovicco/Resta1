@@ -1,16 +1,16 @@
 #INCLUDE "PROTHEUS.CH"
 
-#DEFINE __cDirectory__ GetTempPath() //Define que as imagens estar„o no arquivo tempor·rio do usu·rio
+#DEFINE __cDirectory__ GetTempPath() //Define que as imagens estar√£o no arquivo tempor√°rio do usu√°rio
 
 //-----------------------------------------
-// Define que o FwBalloon ser· informativo
+// Define que o FwBalloon ser√° informativo
 //-----------------------------------------
 #Define FW_BALLOON_WARNING 1
 #Define FW_BALLOON_ERROR 2
 #Define FW_BALLOON_INFORMATION 3 
 #Define FW_BALLOON_CONTAINER 4
 //---------------------------------------------------------
-// Define o layout do FwBalloon de acordo com sua posiÁ„o
+// Define o layout do FwBalloon de acordo com sua posi√ß√£o
 //---------------------------------------------------------
 #Define BALLOON_POS_NONE 00
 #Define BALLOON_POS_TOP_LEFT 01
@@ -116,7 +116,7 @@ Method Create( oPanel, nImgX, nImgY, cCodigo, nStatus, nShape, cImgId ) Class TR
 		Case nStatus == 1
   			cImg := "full.png"
   		Case nStatus == 2
-	  		cImg := "select.png"
+	  		cImg := "mark.png"
 	EndCase
 	//-- criacao do obj
 	If	nShape == 0
@@ -226,7 +226,7 @@ Return __cDirectory__
 
 //-- Exporta as imagens do RPO para o temporario %TEMP%
 Method ExportImage() Class TResta1
-	Local aImage := { "backg.png" , "empty.png" , "full.png" , "select.png" }
+	Local aImage := { "backg.png" , "empty.png" , "full.png" , "mark.png" }
 	Local nImage
 	For nImage := 1 To Len(aImage)
 		cImageTo := ::DirectoryImg()+aImage[nImage]
